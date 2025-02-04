@@ -1,0 +1,53 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="CssStyleSheet1.css"
+
+    </head>
+ 
+    <body>
+
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="heart video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div>
+
+            <h1 class=" Header_text">Do you wanna go out with me?</h1>
+            <h1 class="Header_text">Are you free on valentines day?</h1>
+
+        </div>
+        
+        <div class="cute gif_lagayan">
+        
+            <video controls autoplay muted loop>
+                <source src="cute lang na gif.mp4" type="video/mp4">
+                your browser doesn't support video tag
+            </video>
+        
+            </div>
+
+            <div class=" Buttons">
+                <buttons class="btn" id="yesButton" onclick="nextPage()">Yes</buttons>
+                <button class="Btn" id="noButton" onmouseover="movebutton"()" onclick="moveButton()">No</button>
+                <script>
+                    
+                    function nextPage() {
+
+                        window.location.href = "yes.html";
+                    }
+
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+
+                    </script>
+            </div>
+        </div>
