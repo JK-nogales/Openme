@@ -26,13 +26,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+
    
-}
+
 
 .header_text {
     font-family: 'Nunito';
